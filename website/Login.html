@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html> 
+<style> 
+    form { 
+        border: 3px solid #f1f1f1; 
+    } 
+      
+    input[type=text], 
+    input[type=password] { 
+        width: 100%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+      
+    button { 
+        background-color: #4CAF50; 
+        color: white; 
+        padding: 14px 20px; 
+        margin: 8px 0; 
+        border: none; 
+        cursor: pointer; 
+        width: 100%; 
+    } 
+   
+    button:hover { 
+        opacity: 0.8; 
+    } 
+    
+    .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px; 
+        background-color: #f44336; 
+    } 
+      
+    .imgcontainer { 
+        text-align: center; 
+        margin: 24px 0 12px 0; 
+    } 
+    
+      
+    img.avatar { 
+        width: 40%; 
+        border-radius: 50%; 
+    } 
+    
+    .container { 
+        padding: 16px; 
+    } 
+      
+    span.psw { 
+        float: right; 
+        padding-top: 16px; 
+    } 
+    
+    @media screen and (max-width: 300px) { 
+        span.psw { 
+            display: block; 
+            float: none; 
+        } 
+        .cancelbtn { 
+            width: 100%; 
+        } 
+    } 
+</style> 
+  
+  <link rel = "stylesheet" href="style.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+<script>  
+$(function(){ 
+  $("#navbar").load("navbar.html"); 
+  $("#footer").load("footer.html");  
+}); 
+</script>
+<body> 
+        <div id="navbar"></div>
+        <p>Translate this page:
+
+                <div id="google_translate_element"></div>
+                
+                <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                }
+                </script>
+                
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                
+                <p>You can translate the content of this page by selecting a language in the select box.</p></p>
+    <h2>Login Form</h2> 
+    <form action="/action_page.php"> 
+        <div class="imgcontainer"> 
+            <img src= 
+"thecodeaddictmain.png" 
+                 alt="Avatar" class="avatar"> 
+        </div> 
+        
+        <div class="container"> 
+            <label><b>Username</b></label> 
+            <input type="text" placeholder="Enter Username" name="uname" required> 
+  
+            <label><b>Password</b></label> 
+            <input type="password" placeholder="Enter Password" name="psw" required> 
+  
+            <button type="submit">Login</button> 
+            <input type="checkbox" checked="checked"> Remember me 
+        </div> 
+  
+        <div class="container" style="background-color:#f1f1f1"> 
+            <button type="button" class="cancelbtn">Cancel</button> 
+            <span class="psw">Forgot <a href="#">password?</a></span> 
+        </div> 
+    </form> 
+    <div id="footer"></div>
+</body> 
+  
+</html> 

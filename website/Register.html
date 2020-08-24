@@ -1,0 +1,90 @@
+<Html>  
+        <head>   
+            <link rel = "stylesheet" href="style.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+        <script>  
+        
+        $(function(){ 
+          $("#navbar").load("navbar.html");
+          $("#footer").load("footer.html"); 
+        }); 
+        </script>
+        
+        <title>  
+        Registration Page  
+        </title>  
+        </head>  
+        
+        <body bgcolor="Lightskyblue"> 
+            <div id="navbar"></div> 
+            <p>Translate this page:
+
+                <div id="google_translate_element"></div>
+                
+                <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                }
+                </script>
+                
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                
+                <p>You can translate the content of this page by selecting a language in the select box.</p></p>
+        <br>  
+        <br>  
+        <form>  
+          
+        <label> Firstname </label>         
+        <input type="text" name="firstname" size="15"/> <br> <br>  
+        <label> Middlename: </label>     
+        <input type="text" name="middlename" size="15"/> <br> <br>  
+        <label> Lastname: </label>         
+        <input type="text" name="lastname" size="15"/> <br> <br>  
+          
+        <label>   
+        Platform Interested :  
+        </label>   
+        <select>  
+        <option value="Hacker Rank">Hacker Rank</option>  
+        <option value="Code Chef">Code Chef</option>  
+        <option value="Geeks for Geeks">Geeks for Geeks</option>  
+        <option value="Leet Code">Leet Code</option>  
+        <option value="W3 Schools">W3 Schools</option>  
+        <option value="Code Forces">Code Forces</option>  
+        <option value="Code Wars">Code Wars</option>  
+        </select>  
+          
+        <br>  
+        <br>  
+        <label>   
+        Gender :  
+        </label><br>  
+        <input type="radio" name="male"/> Male <br>  
+        <input type="radio" name="female"/> Female <br>  
+        <input type="radio" name="other"/> Other  
+        <br>  
+        <br>  
+          
+        <label>   
+        Phone :  
+        </label>  
+        <input type="text" name="country code"  value="+91" size="2"/>   
+        <input type="text" name="phone" size="10"/> <br> <br>  
+        Address  
+        <br>  
+        <textarea cols="80" rows="5" value="address">  
+        </textarea>  
+        <br> <br>  
+        Email:  
+        <input type="email" id="email" name="email"/> <br>    
+        <br> <br>  
+        Password:  
+        <input type="Password" id="pass" name="pass"> <br>   
+        <br> <br>  
+        Re-type password:  
+        <input type="Password" id="repass" name="repass"> <br> <br>  
+        <input type="button" value="Submit"/>  
+        </form>  
+        <div id="footer"></div>
+        </body>  
+        </html>  
